@@ -1,0 +1,7 @@
+commonLabels:
+  type: demo
+commonAnnotations:
+  version: 0.0.1
+resources:
+  - "deployment.yaml"
+  - "service.yaml"
