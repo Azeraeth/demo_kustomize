@@ -1,0 +1,8 @@
+commonLabels:
+  environment: dev
+
+bases:
+- ../../base
+patchesStrategicMerge:
+  - deployment.yaml
+  - service.yaml

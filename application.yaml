@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://misfiredsynapse@bitbucket.org/misfiredsynapse_team/demo_kustomize.git
+    repoURL: https://github.com/Azeraeth/demo_kustomize.git
     targetRevision: HEAD
     path: dev
   destination:
