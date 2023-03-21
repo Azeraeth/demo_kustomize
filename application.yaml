@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/Azeraeth/demo_kustomize.git
-    targetRevision: main
+    targetRevision: master
     path: kustomize/overlays/dev
   destination:
     server: https://kubernetes.default.svc
