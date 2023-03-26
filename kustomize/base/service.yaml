@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: demo
   enviroment: base
-  app: demo
 spec:
   selector:
     app: demo

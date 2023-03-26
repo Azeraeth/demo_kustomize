@@ -4,7 +4,6 @@ metadata:
   name: demo
   labels:
     environment: baes
-    app: demo
 spec:
   selector:
     matchLabels:
