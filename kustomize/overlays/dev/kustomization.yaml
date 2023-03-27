@@ -18,7 +18,7 @@ patches:
   patch: |-
     - op: replace
       path: /spec/rules/0/host
-      value: dev.dashoard.com
+      value: dev.dashboard.com
 - path: deployment-patch.yaml
   target:
     name: demo
