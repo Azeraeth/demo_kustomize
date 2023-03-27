@@ -16,5 +16,7 @@ spec:
       containers:
       - name: demo
         image: nginx
+        command: ["/bin/bash"]
+        args: ["-c", "echo ${HOSTNAME} > /usr/share/nginx/html/index.html"]
         ports:
         - containerPort: 80
