@@ -22,7 +22,7 @@ patches:
 - path: rollout-patch.yaml
   target:
     name: demo
-labels:
-- includeSelectors: true
-  pairs:
-    environment: dev
+# labels:
+# - includeSelectors: true
+#   pairs:
+#     environment: dev
