@@ -1,5 +1,5 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
 metadata:
   name: demo
   labels:
@@ -20,3 +20,8 @@ spec:
         args: ["-c", "echo \"${HOSTNAME}\" > /usr/share/nginx/html/index.html && /usr/sbin/nginx -g \"daemon off;\""]
         ports:
         - containerPort: 80
+  strategy:
+    blueGreen:
+      activeService: demo-svc-active
+      previewService: demo-svc-preview
+      autoPromotionEnabled: false
