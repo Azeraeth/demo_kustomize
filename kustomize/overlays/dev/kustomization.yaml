@@ -7,9 +7,9 @@ nameSuffix: "-v001"
 resources:
 - ../../base
 
-replicas:
-- count: 2
-  name: demo
+# replicas:
+# - count: 2
+#   name: demo
 
 patches:
 - target:
@@ -19,7 +19,7 @@ patches:
     - op: replace
       path: /spec/rules/0/host
       value: dev.dashboard.com
-- path: deployment-patch.yaml
+- path: rollout-patch.yaml
   target:
     name: demo
 labels:

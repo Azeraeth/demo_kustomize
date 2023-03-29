@@ -9,7 +9,7 @@ commonLabels:
 #   - https://argoproj.github.io/argo-rollouts/features
 
 resources:
-  - deployment.yaml
+  - rollout.yaml
   - service-active.yaml
   - service-preview.yaml
   - ingress.yaml
