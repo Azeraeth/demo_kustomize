@@ -26,7 +26,10 @@ spec:
       stableService: stable-service
       trafficRouting:
         nginx:
-          stableIngress: demo
-          annotationPrefix: customingress.nginx.ingress.kubernetes.io
+          stableIngress: stable-demo
+          # annotationPrefix: customingress.nginx.ingress.kubernetes.io
           # additionalIngressAnnotations:
           #   canary-weight: "20"
+      steps:
+        - setWeight: 20
+        - pause: {}
