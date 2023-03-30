@@ -14,7 +14,7 @@ resources:
 patches:
 - target:
     kind: Ingress
-    name: demo
+    name: stable-demo
   patch: |-
     - op: replace
       path: /spec/rules/0/host
