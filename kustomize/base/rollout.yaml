@@ -17,7 +17,7 @@ spec:
       - name: demo
         image: nginx
         command: ["/bin/sh"]
-        args: ["-c", "echo \"${HOSTNAME}\" > /usr/share/nginx/html/index.html && /usr/sbin/nginx -g \"daemon off;\""]
+        args: ["-c", "echo \"${HOSTNAME} v2\" > /usr/share/nginx/html/index.html && /usr/sbin/nginx -g \"daemon off;\""]
         ports:
         - containerPort: 80
   strategy:
