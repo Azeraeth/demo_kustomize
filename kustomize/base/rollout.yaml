@@ -28,3 +28,5 @@ spec:
         nginx:
           stableIngress: demo
           annotationPrefix: customingress.nginx.ingress.kubernetes.io
+          additionalIngressAnnotations:
+            canary-weight: 20
