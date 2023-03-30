@@ -31,5 +31,5 @@ spec:
           # additionalIngressAnnotations:
           #   canary-weight: "20"
       steps:
-        - setWeight: 20
+        - setWeight: 80
         - pause: {}
