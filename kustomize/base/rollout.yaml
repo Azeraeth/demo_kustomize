@@ -22,8 +22,8 @@ spec:
         - containerPort: 80
   strategy:
     canary:
-      canaryService: canary-active
-      stableService: stable-preview
+      canaryService: canary-service
+      stableService: stable-service
       trafficRouting:
         nginx:
           stableIngress: demo
