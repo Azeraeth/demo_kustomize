@@ -4,6 +4,7 @@ namespace: default
 
 commonLabels:
   app.kubernetes.io/name: demo
+  app: demo
 
 # configurations:
 #   - https://argoproj.github.io/argo-rollouts/features
