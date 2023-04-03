@@ -3,7 +3,7 @@ kind: Kustomization
 namespace: default
 
 commonLabels:
-  app: demo
+  app.kubernetes.io/name: demo
 
 # configurations:
 #   - https://argoproj.github.io/argo-rollouts/features
