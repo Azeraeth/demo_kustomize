@@ -4,10 +4,12 @@ metadata:
   name: demo
   labels:
     environment: baes
+    app.kubernetes.io/name: demo
 spec:
   selector:
     matchLabels:
       app: demo
+      app.kubernetes.io/name: demo
   template:
     metadata:
       labels:
