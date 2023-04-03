@@ -28,8 +28,8 @@ spec:
         nginx:
           stableIngress: stable-demo
           # annotationPrefix: customingress.nginx.ingress.kubernetes.io
-          # additionalIngressAnnotations:
-          #   canary-weight: "20"
+          additionalIngressAnnotations:
+            canary-weight: "20"
       steps:
         - setWeight: 100
         - pause: {}
