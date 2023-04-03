@@ -6,6 +6,7 @@ metadata:
 spec:
   selector:
     app: demo
+    app.kubernetes.io/name: demo
   ports:
   - port: 80
     targetPort: 80
